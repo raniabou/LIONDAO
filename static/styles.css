@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.table-container {
+    margin-top: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+

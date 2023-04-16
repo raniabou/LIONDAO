@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', 
+filename='styles.css') }}">
+    <title>Word List to Data Frame</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Word List to Data Frame</h1>
+        <form method="POST">
+            <label for="words">Enter a list of words separated by 
+commas:</label>
+            <input type="text" id="words" name="words" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if table %}
+            <div class="table-container">{{ table|safe }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
